@@ -17,6 +17,8 @@ sudo ansible-playbook -i inventory/hosts.localhost playbooks/redeploy-certificat
 sudo ansible-playbook -i inventory/hosts.localhost playbooks/adhoc/uninstall.yml
 
 
+sudo htpasswd -c /etc/origin/master/htpasswd guo
+
 
 ```
 
