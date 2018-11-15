@@ -21,6 +21,7 @@ sudo htpasswd -c /etc/origin/master/htpasswd guo
 
 oc create -f https://raw.githubusercontent.com/bigg01/gcloud-fedora/master/is-java.yaml -n openshift
 
+sudo ansible-playbook -i inventory/hosts.localhost playbooks/redeploy-certificates.yml -e openshift_certificate_expiry_warning_days=30
 
 ```
 
