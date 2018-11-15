@@ -12,6 +12,12 @@ gpgcheck=0
 exit 
 sudo ansible-playbook -i inventory/hosts.localhost playbooks/prerequisites.yml
 sudo ansible-playbook -i inventory/hosts.localhost playbooks/deploy_cluster.yml
+#
+sudo ansible-playbook -i inventory/hosts.localhost playbooks/redeploy-certificates.yml
+sudo ansible-playbook -i inventory/hosts.localhost playbooks/adhoc/uninstall.yml
+
+
+
 ```
 
 ```
