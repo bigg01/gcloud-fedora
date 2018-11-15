@@ -65,3 +65,6 @@ localhost ansible_connection=local openshift_node_group_name="node-config-all-in
 
 
 $ oc adm policy add-cluster-role-to-user cluster-admin guo --rolebinding-name=cluster-admin
+
+
+https://blog.openshift.com/lets-encrypt-acme-v2-api/
