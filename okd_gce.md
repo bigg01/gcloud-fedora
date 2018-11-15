@@ -68,3 +68,7 @@ $ oc adm policy add-cluster-role-to-user cluster-admin guo --rolebinding-name=cl
 
 
 https://blog.openshift.com/lets-encrypt-acme-v2-api/
+
+
+./acme.sh --issue --dns dns_gcloud -d console.oliverg.ch -d oliverg.ch -d '*.app.oliverg.ch'
+https://github.com/Neilpang/acme.sh/tree/master/dnsapi
