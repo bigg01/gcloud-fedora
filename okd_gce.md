@@ -19,6 +19,8 @@ sudo ansible-playbook -i inventory/hosts.localhost playbooks/adhoc/uninstall.yml
 
 sudo htpasswd -c /etc/origin/master/htpasswd guo
 
+oc create -f https://raw.githubusercontent.com/bigg01/gcloud-fedora/master/is-java.yaml -n openshift
+
 
 ```
 
