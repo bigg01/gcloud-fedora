@@ -8,6 +8,7 @@ name=Origin RPMs
 baseurl=https://storage.googleapis.com/origin-ci-test/logs/test_branch_origin_extended_conformance_gce/3628/artifacts/rpms
 enabled=1
 gpgcheck=0
+#https://artifacts-openshift-release-3-11.svc.ci.openshift.org/repo/
 
 exit 
 sudo ansible-playbook -i inventory/hosts.localhost playbooks/prerequisites.yml
