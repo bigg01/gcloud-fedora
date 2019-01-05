@@ -40,6 +40,7 @@ etcd
 #ansible_python_interpreter=/usr/bin/python3
 openshift_deployment_type=origin
 openshift_portal_net=172.30.0.0/16
+os_sdn_network_plugin_name=ovs-networkpolicy
 # localhost likely doesn't meet the minimum requirements
 openshift_disable_check=disk_availability,memory_availability
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider',}]
