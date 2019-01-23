@@ -78,3 +78,7 @@ https://blog.openshift.com/lets-encrypt-acme-v2-api/
 ./acme.sh --issue --dns dns_gcloud  -d oliverg.ch -d '*.oliverg.ch' -d '*.app.oliverg.ch'
 
 https://github.com/Neilpang/acme.sh/tree/master/dnsapi
+
+
+$ cat ~/.acme.sh/yourdomain/yourdomain.cer ~/.acme.sh/yourdomain/yourdomain.key ~/.acme.sh/yourdomain/ca.cer > /tmp/cloudapps.router.pem
+$ oc secrets new router-certs tls.crt=/tmp/cloudapps.router.pem tls.key=~/.acme.sh/yourdomain/yourdomain.key -o json --type='kubernetes.io/tls' --confirm | oc replace -f 
